@@ -12,7 +12,7 @@
 
 
 ## TARGET-Seq Genotyping analysis
-1. Samples were demultiplexed by well within the bcl2fastq workflow, resulting in R1 and R2 fastq files for each well (deposited on GEO)
+1. Samples were demultiplexed by well within the bcl2fastq workflow, resulting in R1 and R2 fastq files for each well (deposited on GEO GSE300280)
 2. Files were then further demultiplexed by well using the in-line barcodes introduced in PCR2 primers, using the Genotyping_demultiplexing.ipynb script
     - R1 and R2 barcodes provided in .tsv files
 3. CRISPResso2 was then run on each individual cell using Genotyping_seqkit_and_crispresso.ipynb
