@@ -7,14 +7,14 @@
 ## TARGET-Seq scRNA analysis
 -Samples were demultiplexed by plate within the bcl2fastq workflow, resulting in R1 and R2 fastq files for each plate\
 -Files were then further preprocessed using the commands in RNASeq_preprocessing.sh\
-  -Demultiplexing by cell and adapter trimming using cutadapt. Barcodes provided in scRNAseq_barcodes.fasta\
-  -Alignment and feature counting using STARSolo\
+    -Demultiplexing by cell and adapter trimming using cutadapt. Barcodes provided in scRNAseq_barcodes.fasta\
+    -Alignment and feature counting using STARSolo\
 
 
 ## TARGET-Seq Genotyping analysis
 -Samples were demultiplexed by well within the bcl2fastq workflow, resulting in R1 and R2 fastq files for each well\
 -Files were then further demultiplexed by well using the in-line barcodes introduced in PCR2 primers, using the Genotyping_demultiplexing.ipynb script\
-  -R1 and R2 barcodes provided in .tsv files\
+    -R1 and R2 barcodes provided in .tsv files\
 -CRISPResso2 was then run on each individual cell using Genotyping_seqkit_and_crispresso.ipynb\
 -Properties of individual cells were then called using Genotyping_call_cells_from_crispresso.ipynb\
 
